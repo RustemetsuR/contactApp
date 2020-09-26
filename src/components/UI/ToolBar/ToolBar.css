@@ -1,0 +1,23 @@
+.toolBar{
+    background: rgb(0, 183, 255);
+    color: white;
+    position: relative;
+    box-shadow: 1px 1px 1px black;
+    padding: 25px;
+}
+
+
+.toolBar a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 25px;
+    padding: 10px;
+}
+
+.toolBar a:hover{
+    transition: ease 0.5s;
+    background: white;
+    color: rgb(0, 183, 255);
+}
