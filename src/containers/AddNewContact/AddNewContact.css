@@ -1,0 +1,44 @@
+.addContactBox{
+    padding-top: 50px;
+}
+
+.addContactForm{
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.addContactForm button{
+    display: inline-block;
+    color: white;
+    background: rgb(20, 135, 180);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.input-box{
+    margin: 20px 0;
+}
+
+.input-box label{
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.input-box input{
+    padding: 10px 5px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.preview-img{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 200px;
+}

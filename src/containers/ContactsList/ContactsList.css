@@ -1,0 +1,37 @@
+.contacts-list-box {
+    margin-top: 20px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.modal-info-box {
+    background: rgb(0, 183, 255);
+    margin: 0 auto;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+.modal-info-image {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-info-name {
+    text-align: center;
+}
+
+.modal-info-box a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.modal-info-box a:hover {
+    text-decoration: underline;
+}

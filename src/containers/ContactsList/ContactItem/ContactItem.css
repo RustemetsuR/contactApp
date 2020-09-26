@@ -1,0 +1,46 @@
+.contact-item-box {
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item-box img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.contact-item-box h3 {
+    width: 50%;
+    margin: 0;
+    margin-left: 15%;
+    font-size: 35px;
+}
+
+.contact-item-button {
+    display: block;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+.contact-item-delete:hover{
+    background: rgb(172, 2, 2);
+}
+
+.contact-item-edit:hover{
+    background: rgb(107, 156, 32);
+}
+
+.contact-item-show:hover{
+    background: rgb(2, 107, 168);
+}
+
