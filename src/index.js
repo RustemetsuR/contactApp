@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import * as serviceWorker from './serviceWorker';
+import addContactReducer from './store/reducers/addContactReducer';
+import contactsReducer from './store/reducers/contactsReducer';
+import thunkMiddleware from 'redux-thunk';
+import { Provider } from 'react-redux';
+
+const rootReducer = combineReducers({
+  contacts: contactsReducer,
+  addContact: addContactReducer,
+});
+
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+
+const app = (
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  app,
   document.getElementById('root')
 );
 
